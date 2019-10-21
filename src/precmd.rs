@@ -21,7 +21,7 @@ fn repo_status(r: &Repository, detailed: bool) -> Option<String> {
     let mut out = vec![];
 
     if let Some(name) = get_head_shortname(r) {
-        out.push(Cyan.paint(name));
+        out.push(Purple.paint(name));
     }
 
     if !detailed {
